@@ -1,0 +1,57 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+    <!-- Arduino -->
+    <rect x="300" y="150" width="120" height="180" fill="none" stroke="black" stroke-width="2"/>
+    <text x="330" y="240" font-family="Arial" font-size="16">Arduino</text>
+    
+    <!-- Fingerprint Sensor -->
+    <rect x="100" y="150" width="100" height="80" fill="none" stroke="black" stroke-width="2"/>
+    <text x="110" y="190" font-family="Arial" font-size="12">Fingerprint</text>
+    <text x="120" y="210" font-family="Arial" font-size="12">Sensor</text>
+    
+    <!-- Relay Module -->
+    <rect x="500" y="150" width="100" height="100" fill="none" stroke="black" stroke-width="2"/>
+    <text x="515" y="200" font-family="Arial" font-size="14">Relay</text>
+    
+    <!-- Solenoid Lock -->
+    <rect x="700" y="150" width="60" height="100" fill="none" stroke="black" stroke-width="2"/>
+    <text x="705" y="200" font-family="Arial" font-size="12">Solenoid</text>
+    
+    <!-- Power Supply -->
+    <rect x="600" y="50" width="80" height="60" fill="none" stroke="black" stroke-width="2"/>
+    <text x="610" y="85" font-family="Arial" font-size="12">12V PSU</text>
+    
+    <!-- Connections -->
+    <!-- Fingerprint to Arduino -->
+    <path d="M 200 170 L 300 170" stroke="red" stroke-width="2"/>
+    <text x="220" y="165" font-family="Arial" font-size="12">VCC (5V)</text>
+    
+    <path d="M 200 190 L 300 190" stroke="black" stroke-width="2"/>
+    <text x="220" y="185" font-family="Arial" font-size="12">GND</text>
+    
+    <path d="M 200 210 L 300 210" stroke="green" stroke-width="2"/>
+    <text x="220" y="205" font-family="Arial" font-size="12">TX → D2</text>
+    
+    <path d="M 200 230 L 300 230" stroke="blue" stroke-width="2"/>
+    <text x="220" y="225" font-family="Arial" font-size="12">RX → D3</text>
+    
+    <!-- Arduino to Relay -->
+    <path d="M 420 170 L 500 170" stroke="red" stroke-width="2"/>
+    <text x="440" y="165" font-family="Arial" font-size="12">5V</text>
+    
+    <path d="M 420 190 L 500 190" stroke="black" stroke-width="2"/>
+    <text x="440" y="185" font-family="Arial" font-size="12">GND</text>
+    
+    <path d="M 420 210 L 500 210" stroke="purple" stroke-width="2"/>
+    <text x="440" y="205" font-family="Arial" font-size="12">D7</text>
+    
+    <!-- Power Supply to Relay and Solenoid -->
+    <path d="M 640 110 L 640 150" stroke="red" stroke-width="2"/>
+    <text x="645" y="130" font-family="Arial" font-size="12">12V+</text>
+    
+    <path d="M 600 240 L 600 280 L 730 280 L 730 250" stroke="black" stroke-width="2"/>
+    <text x="645" y="295" font-family="Arial" font-size="12">GND</text>
+    
+    <!-- Relay to Solenoid -->
+    <path d="M 600 170 L 700 170" stroke="red" stroke-width="2"/>
+    <text x="620" y="165" font-family="Arial" font-size="12">NO → Solenoid+</text>
+</svg>
